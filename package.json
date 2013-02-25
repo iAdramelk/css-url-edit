@@ -1,0 +1,38 @@
+{
+  "name": "css-url-edit",
+  "description": "Collection of helpers for css url() manipulations.",
+  "version": "0.1.0",
+  "homepage": "https://github.com/iadramelk/css-url-edit",
+  "author": {
+    "name": "Alexey Ivanov",
+    "email": "stupidlogin@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/iadramelk/css-url-edit.git"
+  },
+  "bugs": {
+    "url": "https://github.com/iadramelk/css-url-edit/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/iadramelk/css-url-edit/blob/master/LICENSE-MIT"
+    }
+  ],
+  "main": "lib/css-url-edit",
+  "engines": {
+    "node": ">=0.8.0"
+  },
+  "scripts": {
+    "test": "grunt vows"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.0",
+    "grunt-contrib-jshint": "~0.1.1",
+    "grunt-contrib-watch": "~0.2.0",
+    "grunt-vows": "~0.0.0",
+    "vows": "~0.7.0"
+  },
+  "keywords": []
+}

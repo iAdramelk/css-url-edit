@@ -1,0 +1,27 @@
+.class1 {
+    background: url('image.jpg');
+}
+
+.class2 {
+    background: url('images/image.jpeg');
+}
+
+.class3 {
+    background: url(images/image.jpeg);
+}
+
+.class4 {
+    background: url("../images/image.gif");
+}
+
+.class5 {
+    background: url("http://yandex.ru/images/image.gif");
+}
+
+.class6 {
+    background: url("/images/image.gif");
+}
+
+.class7 {
+    background: url("data:image/gif;base64,R0lGODlhCgAKAIAAAP8AAAAAACH5BAAAAAAALAAAAAAKAAoAAAIIhI+py+0PYysAOw==");
+}
