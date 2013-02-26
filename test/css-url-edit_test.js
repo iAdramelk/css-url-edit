@@ -3,7 +3,6 @@
 var vows   = require( 'vows' ),
     assert = require( 'assert' ),
     fs     = require( 'fs' ),
-    path   = require( 'path' ),
 
     file   = fs.readFileSync( './test/css/urls.css', 'utf-8' ),
     URLS   = require( '../lib/css-url-edit');
