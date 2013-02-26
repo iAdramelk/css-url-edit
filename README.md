@@ -1,4 +1,4 @@
-# css-url-edit [![Build Status](https://secure.travis-ci.org/iadramelk/css-url-edit.png)](http://travis-ci.org/iadramelk/css-url-edit)
+# css-url-edit [![Build Status](https://secure.travis-ci.org/iAdramelk/css-url-edit.png)](https://travis-ci.org/iAdramelk/css-url-edit)
 
 Collection of helpers for css url manipulations. Strongly inspired and partially based on code from [cssrb](https://github.com/afelix/cssrb) project.
 
