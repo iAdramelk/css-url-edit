@@ -20,6 +20,8 @@ var URLS = css_url_edit( string_with_css );
 
 After that you will have following methids in your code:
 
+### getURLs
+
 ```javascript
 URLS.getURLs( [mask] );
 ```
@@ -28,6 +30,8 @@ URLS.getURLs( [mask] );
 
 Returns array of unique URLs in css document.
 
+### changeCSSRoot
+
 ```javascript
 URLS.changeCSSRoot( from_path, to_path );
 ```
@@ -35,6 +39,8 @@ URLS.changeCSSRoot( from_path, to_path );
 **from_path** and **to_path** must be *{string}* with absolute path to folders.
 
 Changes relative path of every relative url() address in the URLS object to the new base.
+
+### changeURLContent
 
 ```javascript
 URLS.changeURLContent( from_value, [to_value] );
@@ -45,9 +51,10 @@ URLS.changeURLContent( from_value, [to_value] );
 
 Replace content of every URL matching RegExp with new content.
 
+### rebuildCSS
 
 ```javascript
-URLS.rebuildCSS()
+URLS.rebuildCSS();
 ```
 
  Return compiled css.
