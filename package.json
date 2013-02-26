@@ -1,7 +1,7 @@
 {
   "name": "css-url-edit",
   "description": "Collection of helpers for css url() manipulations.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "homepage": "https://github.com/iadramelk/css-url-edit",
   "author": {
     "name": "Alexey Ivanov",
@@ -27,13 +27,15 @@
   "scripts": {
     "test": "grunt"
   },
+  "dependencies": {
+    "cssp": "~1.0.6"
+  },
   "devDependencies": {
     "vows": "~0.7.0",
     "grunt": "~0.4.0",
-    "cssp": "~1.0.6",
     "grunt-cli": "*",
     "grunt-contrib-jshint": "~0.1.1",
     "grunt-vows": "~0.4.0"
   },
-  "keywords": []
+  "keywords": ["css"]
 }
