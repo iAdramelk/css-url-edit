@@ -46,7 +46,7 @@ Changes relative path of every relative url() address in the URLS object to the 
 URLS.changeURLContent( from_value, [to_value] );
 ```
 
-**from_value** *{regexp}* Mask to select urls with.  
+**from_value** *{regexp|string}* Mask to select urls with.  
 **to_value** *{string}*  Rule to apply on found items.
 
 Replace content of every URL matching RegExp with new content.
@@ -75,6 +75,8 @@ var new_css = URLS.rebuildCSS();
 
 ## Release History
 
+### 0.2.0 What's new
+  - changeURLContent() can now take string as the first argument.
 ### 0.1.0 What's new
   - Initial release.
 

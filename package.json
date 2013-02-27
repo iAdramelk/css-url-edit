@@ -1,7 +1,7 @@
 {
   "name": "css-url-edit",
   "description": "Collection of helpers for css url() manipulations.",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "homepage": "https://github.com/iadramelk/css-url-edit",
   "author": {
     "name": "Alexey Ivanov",

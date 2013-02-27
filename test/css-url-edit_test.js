@@ -98,7 +98,6 @@ cssURLEditSuite.addBatch({
         topic: function () {
 
             var css = URLS( file );
-            css.changeURLContent( /http:\/\/yandex.ru\/(.*)/, 'http://google.com/$1' );
 
             return css;
 
@@ -106,17 +105,26 @@ cssURLEditSuite.addBatch({
 
         'changeURLContent(/http:\/\/yandex.ru\/(.*)/, "http://google.com/$1") will change yandex.ru to goolge.com': function ( css ) {
 
+            css.changeURLContent( /http:\/\/yandex.ru\/(.*)/, 'http://google.com/$1' );
             assert.include( css.rebuildCSS(), "url('http://google.com/images/image.gif')" );
 
         },
 
-        'changeURLContent("abc", "http://google.com/$1") will throw error': function ( css ) {
+        'changeURLContent("data:image/gif;", "data:image/png;") will change data type to png': function ( css ) {
+
+            css.changeURLContent("data:image/gif;", "data:image/png;");
+
+            assert.include( css.rebuildCSS(), "data:image/png;" );
+
+        },
+
+        'changeURLContent( 34 , "http://google.com/$1") will throw error': function ( css ) {
 
             var isError = false;
 
             try {
 
-                css.changeURLContent("abc", "http://google.com/$1");
+                css.changeURLContent( 34 , "http://google.com/$1");
 
             } catch ( e ) {
 
